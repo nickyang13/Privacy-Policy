@@ -4,76 +4,79 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>BrandNewDay Privacy Policy & Support</title>
+  <meta name="description" content="BrandNewDay Privacy Policy and Support information." />
+
   <style>
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
-      line-height: 1.7;
-      max-width: 880px;
-      margin: 0 auto;
-      padding: 32px 20px;
-      color: #222;
-      background: #fafafa;
+    :root {
+      --bg: #f7f7f8;
+      --card: #ffffff;
+      --text: #1f2933;
+      --muted: #667085;
+      --border: #e5e7eb;
+      --accent: #111827;
+      --link: #2563eb;
     }
 
-    .container {
-      background: #ffffff;
-      border-radius: 16px;
-      padding: 32px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.06);
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.7;
+    }
+
+    .page {
+      max-width: 960px;
+      margin: 0 auto;
+      padding: 40px 20px 64px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 24px;
+      padding: 40px;
+      box-shadow: 0 20px 60px rgba(15, 23, 42, 0.06);
     }
 
     h1 {
-      font-size: 30px;
-      margin-bottom: 8px;
-      color: #111;
+      margin: 0 0 12px;
+      font-size: 34px;
+      line-height: 1.2;
+      letter-spacing: -0.03em;
     }
 
     h2 {
-      margin-top: 32px;
-      font-size: 22px;
-      color: #111;
-      border-bottom: 1px solid #eee;
-      padding-bottom: 8px;
+      margin-top: 44px;
+      padding-top: 24px;
+      border-top: 1px solid var(--border);
+      font-size: 24px;
+      letter-spacing: -0.02em;
     }
 
     h3 {
-      margin-top: 24px;
+      margin-top: 28px;
       font-size: 18px;
-      color: #222;
     }
 
     p {
-      margin: 10px 0;
+      margin: 12px 0;
     }
 
     ul {
-      padding-left: 24px;
+      padding-left: 22px;
     }
 
-    .date {
-      color: #666;
-      margin-bottom: 28px;
-    }
-
-    .section {
-      margin-bottom: 28px;
-    }
-
-    .contact {
-      background: #f3f7ff;
-      padding: 16px;
-      border-radius: 12px;
-      margin-top: 12px;
-    }
-
-    .divider {
-      height: 1px;
-      background: #eaeaea;
-      margin: 36px 0;
+    li {
+      margin: 8px 0;
     }
 
     a {
-      color: #0066cc;
+      color: var(--link);
       text-decoration: none;
     }
 
@@ -81,148 +84,272 @@
       text-decoration: underline;
     }
 
-    footer {
-      margin-top: 40px;
+    .muted {
+      color: var(--muted);
+    }
+
+    .notice {
+      margin: 24px 0;
+      padding: 16px 18px;
+      background: #f3f4f6;
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      color: #374151;
+    }
+
+    .lang-switch {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin: 24px 0 8px;
+    }
+
+    .pill {
+      display: inline-flex;
+      align-items: center;
+      padding: 8px 12px;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+      background: #fff;
+      color: var(--accent);
       font-size: 14px;
-      color: #777;
+      font-weight: 600;
+    }
+
+    .footer {
+      margin-top: 48px;
+      color: var(--muted);
+      font-size: 14px;
       text-align: center;
+    }
+
+    @media (max-width: 640px) {
+      .page {
+        padding: 20px 12px 40px;
+      }
+
+      .card {
+        padding: 24px;
+        border-radius: 20px;
+      }
+
+      h1 {
+        font-size: 28px;
+      }
+
+      h2 {
+        font-size: 22px;
+      }
     }
   </style>
 </head>
 
 <body>
-  <div class="container">
-    <h1>BrandNewDay Privacy Policy & Support</h1>
-    <p class="date">Effective Date: 2026</p>
-
-    <div class="section">
+  <main class="page">
+    <section class="card">
+      <h1>BrandNewDay Privacy Policy & Support</h1>
+      <p class="muted">Effective Date: May 16, 2026</p>
       <p>
-        BrandNewDay is a language learning app designed to help users practice vocabulary and learn languages including English, Spanish, Japanese, and Korean.
+        BrandNewDay is a language learning app designed to help users practice vocabulary and learn languages, including English, Spanish, Japanese, Korean, French, German, and other supported courses.
       </p>
-    </div>
 
-    <h2>Privacy Policy</h2>
+      <div class="lang-switch">
+        <a class="pill" href="#english">English</a>
+        <a class="pill" href="#chinese">中文</a>
+        <a class="pill" href="terms.html">Terms of Use</a>
+      </div>
 
-    <h3>1. Information Collection</h3>
-    <p>
-      The current version of BrandNewDay does not collect personal data from users.
-    </p>
-    <p>
-      The app does not transmit user information to our servers. We do not collect names, email addresses, phone numbers, location data, contacts, photos, audio recordings, payment information, or learning records.
-    </p>
+      <div class="notice">
+        This Privacy Policy explains how BrandNewDay handles learning data, local app data, optional support emails, and optional Plus / Pro subscriptions.
+      </div>
 
-    <h3>2. Local Account and Local Login</h3>
-    <p>
-      BrandNewDay may include a sign-up or login interface for creating a local learning profile.
-    </p>
-    <p>
-      This local profile is stored only on the user's device. The email or password entered in the app is not sent to any server and is not accessible by us.
-    </p>
+      <section id="english">
+        <h2>Privacy Policy</h2>
 
-    <h3>3. Local Data Storage</h3>
-    <p>
-      Learning progress, vocabulary records, language preferences, and app settings are stored locally on the user's device.
-    </p>
-    <p>
-      We do not upload this information to a cloud server.
-    </p>
+        <h3>1. Information We Collect</h3>
+        <p>
+          BrandNewDay is designed to minimize data collection. We do not collect users’ personal learning records, location data, contacts, photos, audio recordings, or device files for advertising or tracking purposes.
+        </p>
+        <p>
+          The app does not require users to create an online account to use the core learning features. If the app includes a local profile, local login, or local learning identity, that information is stored on the user’s device and is not sent to our own server.
+        </p>
 
-    <h3>4. Third-Party Services</h3>
-    <p>
-      The current version of BrandNewDay does not use third-party analytics, advertising SDKs, cloud storage services, or external login services to collect user data.
-    </p>
+        <h3>2. Local Data Storage</h3>
+        <p>
+          Learning progress, vocabulary records, language preferences, app settings, and local course progress may be stored locally on the user’s device.
+        </p>
+        <p>
+          We do not upload local learning records to our own cloud server. Users may remove locally stored app data by deleting the app from their device, unless future versions introduce optional cloud sync or account-based features.
+        </p>
 
-    <h3>5. Children’s Privacy</h3>
-    <p>
-      BrandNewDay is designed for general language learning. We do not knowingly collect personal information from children.
-    </p>
+        <h3>3. Optional Plus / Pro Subscriptions</h3>
+        <p>
+          BrandNewDay may offer optional Plus and Pro membership subscriptions through Apple In-App Purchase.
+        </p>
+        <p>
+          Subscription payment, renewal, cancellation, refund handling, and billing management are processed by Apple. We do not directly collect, store, or process users’ payment card information.
+        </p>
+        <p>
+          The app may receive subscription status or entitlement information through Apple’s StoreKit system in order to unlock Plus or Pro features inside the app.
+        </p>
 
-    <h3>6. Future Updates</h3>
-    <p>
-      Future versions may add cloud accounts, server-based login, synchronization, or other online features. If these features are added, this Privacy Policy and the App Store privacy information will be updated accordingly.
-    </p>
+        <h3>4. Support Email and Feedback</h3>
+        <p>
+          If users contact us by email for support, feedback, bug reports, Pro feature requests, language module requests, or custom vocabulary requests, we may receive the user’s email address and the content voluntarily included in the message.
+        </p>
+        <p>
+          We use this information only to respond to support requests, improve the app, and handle user-submitted feedback. We do not sell support emails or use them for third-party advertising.
+        </p>
 
-    <h2>Support</h2>
+        <h3>5. AI-Assisted and Personalized Learning Features</h3>
+        <p>
+          BrandNewDay may include AI-assisted or personalized learning features to help users review vocabulary, organize learning content, or improve study efficiency.
+        </p>
+        <p>
+          Unless clearly stated inside the app, users’ personal learning records remain on the device and are not uploaded to our own server for AI processing. If future versions add server-based AI processing, cloud accounts, or synchronization features, this Privacy Policy and App Store privacy information will be updated accordingly.
+        </p>
 
-    <p>
-      If you need help or have questions about BrandNewDay, please contact us:
-    </p>
+        <h3>6. Third-Party Services</h3>
+        <p>
+          At this time, BrandNewDay does not use third-party advertising SDKs or tracking tools to track users across other apps or websites.
+        </p>
+        <p>
+          Apple may process purchase, subscription, App Store, and payment-related information according to Apple’s own policies when users use App Store services or In-App Purchase.
+        </p>
 
-    <div class="contact">
-      <p>
-        Email:
-        <a href="mailto:klausorlando45@gmail.com">klausorlando45@gmail.com</a>
-      </p>
-    </div>
+        <h3>7. Children’s Privacy</h3>
+        <p>
+          BrandNewDay is designed for general language learning. We do not knowingly collect personal information from children under the age required by applicable law.
+        </p>
+        <p>
+          If a parent or guardian believes that a child has provided personal information to us through support email, please contact us and we will take reasonable steps to delete the information.
+        </p>
 
-    <div class="divider"></div>
+        <h3>8. Data Security</h3>
+        <p>
+          We take reasonable measures to protect information that users voluntarily send to us, such as support emails. However, no method of electronic transmission or storage is completely secure.
+        </p>
 
-    <h1>BrandNewDay 隐私政策与技术支持</h1>
-    <p class="date">生效日期：2026 年</p>
+        <h3>9. Data Deletion Requests</h3>
+        <p>
+          Local learning data can generally be deleted by deleting the app from the user’s device.
+        </p>
+        <p>
+          If users have contacted us by email and want us to delete their support request or feedback message, they may contact us at the email address below.
+        </p>
 
-    <div class="section">
-      <p>
-        BrandNewDay 是一款语言学习 App，用于帮助用户练习词汇，并学习英语、西班牙语、日语和韩语。
-      </p>
-    </div>
+        <h3>10. Future Updates</h3>
+        <p>
+          Future versions of BrandNewDay may add optional cloud accounts, server-based login, synchronization, analytics, or online AI features. If our data practices change, we will update this Privacy Policy and the App Store privacy information.
+        </p>
 
-    <h2>隐私政策</h2>
+        <h3>11. Contact Us</h3>
+        <p>
+          If you have questions about this Privacy Policy or need support, please contact us:
+        </p>
+        <p>
+          Email: <a href="mailto:klausorlando45@gmail.com">klausorlando45@gmail.com</a>
+        </p>
+        <p>
+          Terms of Use: <a href="terms.html">https://nickyang13.github.io/Privacy-Policy/terms.html</a>
+        </p>
+      </section>
 
-    <h3>1. 信息收集</h3>
-    <p>
-      当前版本的 BrandNewDay 不会收集用户的个人数据。
-    </p>
-    <p>
-      本 App 不会将用户信息传输到我们的服务器。我们不会收集用户姓名、邮箱、电话号码、位置信息、通讯录、照片、音频录音、支付信息或学习记录。
-    </p>
+      <section id="chinese">
+        <h2>BrandNewDay 隐私政策与技术支持</h2>
+        <p class="muted">生效日期：2026 年 5 月 16 日</p>
 
-    <h3>2. 本地账户与本地登录</h3>
-    <p>
-      BrandNewDay 可能包含注册或登录界面，用于创建本地学习资料。
-    </p>
-    <p>
-      该本地资料仅保存在用户设备本地。用户在 App 中输入的邮箱或密码不会发送到任何服务器，我们也无法访问这些信息。
-    </p>
+        <h3>1. 我们收集的信息</h3>
+        <p>
+          BrandNewDay 的设计原则是尽量减少数据收集。本 App 不会为了广告或追踪目的收集用户的个人学习记录、位置信息、通讯录、照片、音频录音或设备文件。
+        </p>
+        <p>
+          用户无需创建在线账户即可使用核心学习功能。如果 App 中包含本地学习资料、本地登录或本地学习身份，这些信息仅保存在用户设备本地，不会发送到我们的服务器。
+        </p>
 
-    <h3>3. 本地数据存储</h3>
-    <p>
-      学习进度、单词记录、语言偏好和 App 设置仅保存在用户设备本地。
-    </p>
-    <p>
-      我们不会将这些信息上传到云端服务器。
-    </p>
+        <h3>2. 本地数据存储</h3>
+        <p>
+          学习进度、单词记录、语言偏好、App 设置以及本地课程进度可能会保存在用户设备本地。
+        </p>
+        <p>
+          我们不会将本地学习记录上传到我们自己的云端服务器。除非未来版本加入可选的云同步或账号功能，否则用户通常可以通过删除 App 来清除本地保存的 App 数据。
+        </p>
 
-    <h3>4. 第三方服务</h3>
-    <p>
-      当前版本的 BrandNewDay 不使用第三方分析工具、广告 SDK、云存储服务或外部登录服务来收集用户数据。
-    </p>
+        <h3>3. Plus / Pro 会员订阅</h3>
+        <p>
+          BrandNewDay 可能会通过 Apple App 内购买系统提供可选的 Plus 和 Pro 会员订阅服务。
+        </p>
+        <p>
+          订阅付款、续费、取消、退款以及账单管理由 Apple 处理。我们不会直接收集、保存或处理用户的银行卡、信用卡或支付卡信息。
+        </p>
+        <p>
+          App 可能会通过 Apple StoreKit 系统接收订阅状态或权益信息，用于在 App 内解锁 Plus 或 Pro 功能。
+        </p>
 
-    <h3>5. 儿童隐私</h3>
-    <p>
-      BrandNewDay 用于一般语言学习。我们不会有意收集儿童的个人信息。
-    </p>
+        <h3>4. 技术支持邮件与反馈</h3>
+        <p>
+          如果用户通过邮件联系我们，提交技术支持、问题反馈、Bug 报告、Pro 功能建议、语言模块请求或专属词库请求，我们可能会收到用户的邮箱地址以及用户在邮件中主动提交的内容。
+        </p>
+        <p>
+          我们仅会将这些信息用于回复用户、处理技术支持、改进 App 和整理用户反馈。我们不会出售用户的支持邮件，也不会将其用于第三方广告。
+        </p>
 
-    <h3>6. 后续更新</h3>
-    <p>
-      未来版本可能会加入云端账号、服务器登录、数据同步或其他在线功能。如果加入这些功能，我们会相应更新本隐私政策和 App Store 隐私信息。
-    </p>
+        <h3>5. AI 辅助与个性化学习功能</h3>
+        <p>
+          BrandNewDay 可能包含 AI 辅助或个性化学习功能，用于帮助用户复习单词、整理学习内容或提升学习效率。
+        </p>
+        <p>
+          除非 App 内明确说明，用户的个人学习记录会保留在设备本地，不会上传到我们的服务器进行 AI 处理。如果未来版本加入服务器端 AI、云账号或同步功能，我们会相应更新本隐私政策和 App Store 隐私信息。
+        </p>
 
-    <h2>技术支持</h2>
+        <h3>6. 第三方服务</h3>
+        <p>
+          当前 BrandNewDay 不使用第三方广告 SDK 或跨 App、跨网站追踪工具来追踪用户。
+        </p>
+        <p>
+          当用户使用 App Store 或 App 内购买服务时，Apple 可能会根据其自身政策处理购买、订阅、App Store 和支付相关信息。
+        </p>
 
-    <p>
-      如需帮助或有任何问题，请联系：
-    </p>
+        <h3>7. 儿童隐私</h3>
+        <p>
+          BrandNewDay 是一款通用语言学习 App。我们不会有意收集适用法律规定年龄以下儿童的个人信息。
+        </p>
+        <p>
+          如果父母或监护人认为儿童通过技术支持邮件向我们提供了个人信息，请联系我们，我们会采取合理措施删除相关信息。
+        </p>
 
-    <div class="contact">
-      <p>
-        Email:
-        <a href="mailto:klausorlando45@gmail.com">klausorlando45@gmail.com</a>
-      </p>
-    </div>
+        <h3>8. 数据安全</h3>
+        <p>
+          对于用户主动发送给我们的信息，例如技术支持邮件，我们会采取合理措施进行保护。但任何电子传输或存储方式都无法保证绝对安全。
+        </p>
 
-    <footer>
-      © 2026 BrandNewDay. All rights reserved.
-    </footer>
-  </div>
+        <h3>9. 数据删除请求</h3>
+        <p>
+          本地学习数据通常可以通过删除 App 从用户设备中移除。
+        </p>
+        <p>
+          如果用户曾经通过邮件联系我们，并希望我们删除相关支持请求或反馈内容，可以通过下方邮箱联系我们。
+        </p>
+
+        <h3>10. 后续更新</h3>
+        <p>
+          BrandNewDay 未来版本可能会加入可选的云端账号、服务器登录、数据同步、数据分析或在线 AI 功能。如果我们的数据处理方式发生变化，我们会更新本隐私政策和 App Store 隐私信息。
+        </p>
+
+        <h3>11. 联系我们</h3>
+        <p>
+          如果你对本隐私政策有任何问题，或需要技术支持，请联系我们：
+        </p>
+        <p>
+          Email: <a href="mailto:klausorlando45@gmail.com">klausorlando45@gmail.com</a>
+        </p>
+        <p>
+          使用条款：<a href="terms.html">https://nickyang13.github.io/Privacy-Policy/terms.html</a>
+        </p>
+      </section>
+
+      <p class="footer">© 2026 BrandNewDay. All rights reserved.</p>
+    </section>
+  </main>
 </body>
 </html>
